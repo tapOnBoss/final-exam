@@ -1,0 +1,14 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "App.js",
+  "scripts": {
+    "dev": "node App.js"
+  },
+  "author": "Paulius",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

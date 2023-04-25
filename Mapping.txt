@@ -1,0 +1,26 @@
+final-exam/
+├── client/
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── components/
+│       │   ├── Header.jsx
+│       │   ├── Navbar.jsx
+│       │   └── Sidebar.jsx
+│       ├── pages/
+│       │   ├── Home.jsx
+│       │   └── About.jsx
+│       ├── App.js
+│       ├── App.css
+│       ├── index.js
+│       └── index.css
+├── server/
+│   ├── controllers/
+│   │   └── exampleController.js
+│   ├── models/
+│   │   └── exampleModel.js
+│   ├── routes/
+│   │   └── exampleRoutes.js
+│   ├── server.js
+│   └── .env (environment variables)
+└── package.json
