@@ -1,3 +1,11 @@
+3 projektai
+admin-dashboard pasibandimas react vite@latest su sass
+client pasibandymas google login
+final exam nepavykes pasibandymas su npx create-react-app (kodas luzo po npm init - y bandyta pataisyti pagal stack owerflow pasiulymus)
+
+pasibandymas  npx-create-react expense-tracker-react paikartoti states, functions,event, target, value, useState, node.(!Tik front end!)
+
+
 final-exam/
 ├── client/
 │   ├── public/
@@ -24,3 +32,15 @@ final-exam/
 │   ├── server.js
 │   └── .env (environment variables)
 └── package.json
+
+Naudoju ES7 React/Redux/GraphQL/React-Native snippets extention
+a) leidzia apibresti ka import export ir sudelioja routus arba
+b) iskviecia komandas kuriu nebereikia ilgai rasyti pvz rfc+enter 
+Duoda snippet:
+
+import react from react 
+export const ... =() =>{
+    return(
+        <div></div>
+    )
+}
