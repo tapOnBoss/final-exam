@@ -4,8 +4,9 @@ client pasibandymas google login
 final exam nepavykes pasibandymas su npx create-react-app (kodas luzo po npm init - y bandyta pataisyti pagal stack owerflow pasiulymus)
 
 pasibandymas  npx-create-react expense-tracker-react paikartoti states, functions,event, target, value, useState, node.(!Tik front end!)
-
-
+fronend https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb
+backend https://www.youtube.com/watch?v=KyWaXA_NvT0
+React-admin su postman galima siusti grazinti keisti duomenis
 final-exam/
 ├── client/
 │   ├── public/
