@@ -1,0 +1,7 @@
+{
+    "short_name": "brain gain",
+    "name": "brain gain",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone"
+}

@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply break-all;
+    }
+    a {
+        @apply cursor-pointer;
+    }
+    body {
+        @apply text-muted-brown;
+    }
+    img {
+        @apply max-w-full;
+    }
+    header {
+        @apply pb-8 md:py-6 lg:py-8;
+    }
+    nav {
+        @apply flex justify-between items-center;
+    }
+
+    nav h2 {
+        @apply text-2xl md:text-3xl font-bold;
+    }
+    main {
+        @apply w-[90%] mx-auto min-h-[80vh];
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        @apply appearance-none cursor-pointer w-3 h-3 lg:w-4 lg:h-4 bg-transparent border border-brown-darker checked:bg-brown-darker mr-1;
+    }
+    input[type="checkbox"] {
+        @apply rounded-sm;
+    }
+    input[type="radio"] {
+        @apply rounded-full;
+    }
+    label {
+        @apply text-sm font-bold;
+    }
+}
+@layer utilities {
+    .link {
+        @apply font-semibold cursor-pointer lg:hover:underline;
+    }
+    .container {
+        @apply w-[92%] md:w-[90%] max-w-full mx-auto;
+    }
+    .auth-container {
+        @apply flex flex-col lg:flex-row min-h-[80vh] mx-auto md:justify-center items-center;
+    }
+    .auth-form-container {
+        @apply mx-auto mt-12 lg:mt-0 mb-8 max-w-md;
+    }
+    .form-title {
+        @apply font-bold text-2xl lg:text-3xl text-brown;
+    }
+    .active-nav-link {
+        @apply text-yellow;
+    }
+    .test-option {
+        @apply font-normal text-base;
+    }
+    #tsparticles {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .flip-card {
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .flip-card--flipped {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        @apply absolute text-center p-5 md:p-8 xl:p-12;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        @apply z-10;
+    }
+
+    .flip-card-back {
+        transform: rotateY(180deg);
+    }
+    ::-webkit-scrollbar {
+        @apply w-1 h-1;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-brown bg-opacity-10 rounded-md;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-brown rounded-md;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply text-light-brown bg-brown py-2 px-8 lg:px-10 h-auto rounded-lg hover:bg-brown-darker  cursor-pointer text-sm;
+    }
+    .btn--light {
+        @apply bg-light-brown text-brown;
+    }
+    .btn--link {
+        @apply text-sm bg-light-brown text-brown hover:bg-light-brown-h font-bold uppercase px-5 py-1;
+    }
+    .btn--pagination {
+        @apply py-2 px-4 border bg-transparent border-brown text-brown rounded-lg h-auto cursor-pointer text-sm;
+    }
+    .btn--pagination-active {
+        @apply bg-brown text-light-brown;
+    }
+    .line-input {
+        @apply w-full bg-transparent border-brown border-b-[1px] outline-none pb-2 placeholder-muted-brown text-brown placeholder-opacity-75 focus:placeholder-opacity-0;
+    }
+    .question-card {
+        @apply max-w-[1200px] mx-auto flex flex-col items-center justify-center min-h-[70vh] text-brown  rounded-md bg-light-brown bg-opacity-40;
+    }
+    .edit-form {
+        @apply max-w-[1200px] mx-auto  md:p-5 xl:p-8  rounded-md mt-4 lg:mt-10 bg-opacity-80;
+    }
+    .preview-card-container {
+        @apply grid lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-4;
+    }
+    .preview-card-container li {
+        @apply overflow-hidden;
+    }
+    .preview-card {
+        @apply border border-brown p-5 rounded-md;
+    }
+    .preview-card p {
+        @apply truncate;
+    }
+    .tag {
+        @apply uppercase inline-block text-xs text-light-brown py-1 px-2 rounded-md  font-semibold;
+    }
+}
+
+.Toastify__toast {
+    color: white !important;
+    background: #423e37 !important;
+}
+
+.Toastify__close-button {
+    color: white !important;
+}
